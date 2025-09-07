@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nqobile Tutoring Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i data-lucide="star"></i> Nqobile Tutoring</h1>
+                <p>Online Tutoring for Grades R-3</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#subjects" class="nav-link">Subjects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Fun Learning Adventures Await! <i data-lucide="rocket"></i></h2>
+                <p>Join our friendly tutors for exciting online lessons designed just for young learners</p>
+                <button class="cta-button" onclick="scrollToSection('subjects')">Start Learning Today!</button>
+            </div>
+            <div class="hero-image">
+                <div class="learning-icons">
+                    <div class="icon"><i data-lucide="book-open"></i></div>
+                    <div class="icon"><i data-lucide="palette"></i></div>
+                    <div class="icon"><i data-lucide="calculator"></i></div>
+                    <div class="icon"><i data-lucide="globe"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="subjects">
+        <div class="container">
+            <h2>What We Teach <i data-lucide="book"></i></h2>
+            <div class="subjects-grid">
+                <div class="subject-card" data-subject="reading">
+                    <div class="subject-icon"><i data-lucide="book-open"></i></div>
+                    <h3>Reading & Phonics</h3>
+                    <p>Learn letters, sounds, and start reading your first books!</p>
+                    <ul>
+                        <li>Letter recognition</li>
+                        <li>Phonics sounds</li>
+                        <li>Simple words</li>
+                        <li>Story time</li>
+                    </ul>
+                </div>
+                <div class="subject-card" data-subject="math">
+                    <div class="subject-icon"><i data-lucide="calculator"></i></div>
+                    <h3>Math & Numbers</h3>
+                    <p>Count, add, subtract, and solve fun math puzzles!</p>
+                    <ul>
+                        <li>Counting 1-100</li>
+                        <li>Basic addition</li>
+                        <li>Simple subtraction</li>
+                        <li>Shapes & patterns</li>
+                    </ul>
+                </div>
+                <div class="subject-card" data-subject="writing">
+                    <div class="subject-icon"><i data-lucide="pencil"></i></div>
+                    <h3>Writing & Drawing</h3>
+                    <p>Practice writing letters, words, and express creativity!</p>
+                    <ul>
+                        <li>Letter formation</li>
+                        <li>Simple sentences</li>
+                        <li>Creative drawing</li>
+                        <li>Handwriting practice</li>
+                    </ul>
+                </div>
+                <div class="subject-card" data-subject="science">
+                    <div class="subject-icon"><i data-lucide="microscope"></i></div>
+                    <h3>Science & Nature</h3>
+                    <p>Explore the world around us with fun experiments!</p>
+                    <ul>
+                        <li>Animals & plants</li>
+                        <li>Weather & seasons</li>
+                        <li>Simple experiments</li>
+                        <li>Our planet Earth</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Nqobile Tutoring? <i data-lucide="rainbow"></i></h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon"><i data-lucide="gamepad-2"></i></div>
+                    <h3>Fun & Interactive</h3>
+                    <p>Learning through games, songs, and activities</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i data-lucide="users"></i></div>
+                    <h3>Small Groups</h3>
+                    <p>Maximum 4 students per session for personal attention</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i data-lucide="clock"></i></div>
+                    <h3>Flexible Schedule</h3>
+                    <p>Choose times that work for your family</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Easy to Use</h3>
+                    <p>Simple platform that kids can navigate easily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Ready to Start Learning? <i data-lucide="phone"></i></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch!</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon"><i data-lucide="mail"></i></span>
+                        <span>Info@jdtutoring.co.za</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon"><i data-lucide="phone"></i></span>
+                        <span><a href="tel:0763803862" style="color: white; text-decoration: none;">076 380 3862</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon"><i data-lucide="clock"></i></span>
+                        <span>Mon-Fri: 8AM-6PM</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="parentName">Parent/Guardian Name:</label>
+                            <input type="text" id="parentName" name="parentName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="childName">Child's Name:</label>
+                            <input type="text" id="childName" name="childName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Grade Level:</label>
+                            <select id="grade" name="grade" required>
+                                <option value="">Select Grade</option>
+                                <option value="grade-R">Grade R</option>
+                                <option value="grade-1">Grade 1</option>
+                                <option value="grade-2">Grade 2</option>
+                                <option value="grade-3">Grade 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Interested Subject:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="reading">Reading & Phonics</option>
+                                <option value="math">Math & Numbers</option>
+                                <option value="writing">Writing & Drawing</option>
+                                <option value="science">Science & Nature</option>
+                                <option value="all">All Subjects</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your child's learning goals:</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message <i data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i data-lucide="star"></i> Nqobile Tutoring</h3>
+                    <p>Making learning fun and accessible for every child!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#subjects">Subjects</a></li>
+
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i> Facebook</a>
+                        <a href="#" class="social-link"><i data-lucide="instagram"></i> Instagram</a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i> Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nqobile Tutoring Online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
