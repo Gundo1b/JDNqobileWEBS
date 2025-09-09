@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Send form data to WhatsApp
 function sendToWhatsApp(parentName, childName, grade, subject, message) {
-    const whatsappNumber = '27763803862';
+    const whatsappNumber = '27812191752';
     const text = `Hi! I'm interested in Nqobile Tutoring.\n\nParent: ${parentName}\nChild: ${childName}\nGrade: ${grade}\nSubject: ${subject}\n\nMessage: ${message || 'No additional message'}`;
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank');
@@ -194,11 +194,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add floating animation to learning icons
-    const icons = document.querySelectorAll('.icon');
-    icons.forEach((icon, index) => {
-        icon.style.animationDelay = `${index * 0.5}s`;
-    });
+    // Add floating animation to hero image
+    const heroImg = document.querySelector('.hero-img');
+    if (heroImg) {
+        heroImg.style.animationDelay = '0.5s';
+    }
     
     // Add entrance animations for cards when they come into view
     const observerOptions = {
